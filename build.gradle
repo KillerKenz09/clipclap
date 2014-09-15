@@ -1,6 +1,6 @@
 apply plugin: 'war'
 apply plugin: 'appengine'
-
+apply plugin: 'eclipse'
 def appId     = "clip-clap"					
 def appEmail  = "chrisbaker9001@gmail.com"		
 
@@ -15,6 +15,7 @@ buildscript {
     }
 }
 
+
 repositories {
     mavenCentral()
 }
@@ -24,6 +25,7 @@ dependencies {
 	compile "javax.servlet:servlet-api:2.5"
 	compile "com.google.appengine:appengine-api-1.0-sdk:${appengineVersion}"
 }
+
 
 appengine {
 
